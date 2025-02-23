@@ -1,14 +1,15 @@
 :root{
     --primary-color: rgb(249, 249, 249);
+    /* rgb(249, 249, 249) */
     --secondary-color: rgb(90, 87, 87);
     --tertiary-color: #82c7a5;
-    --fourth-color: rgb(240, 246, 252);
+    --fourth-color: rgb(153, 153, 153);
     --fifth-color: #5B5B66;
-    --background-color: #171716;
+    --background-color: rgb(13, 13, 13);
 
 }
 html {
-    color: white;
+    color: var(--primary-color);
     font-family: 'Inter', sans-serif;
 }
 
@@ -26,30 +27,31 @@ body {
     border-bottom: 1px solid var(--background-color);
 }
 
-.navbar:hover {
-    background-color: none;
+a.navbar-item:hover {
+    --bulma-navbar-item-hover-background-l-delta: none;
 }
 
 .card-who {
-    border: 1px solid var(--secondary-color);
-    color: var(--primary-color);
-    border-radius: 25px;
+    background-color: rgb(18, 18, 18);
+    color: var(--fourth-color);
+    border-radius: .5rem;
     max-width: 400px;
-    padding: 20px;
+    padding: 1rem;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 .profile-image {
-    border: 4px solid #5b5b664b;
-	border-radius: 50%;
-	padding: 7px;
+	border-radius: .5rem;
 }
 
-.hero {
-    /*background-image: url('ooorganize.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;*/
+.test {
+    background-image: linear-gradient(180deg,var(--background-color) 1%,#fff0 40%, var(--background-color) 90%), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.5'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color: white;
+}
+
+.test-2 {
+    background-image: linear-gradient(180deg,var(--background-color) 25%,#fff0 70%), url('ooorganize.svg');
+    background-repeat: repeat;
 }
 
 
@@ -59,7 +61,7 @@ body {
 }
 
 .subtitle {
-    color: var(--secondary-color);
+    color: var(--fourth-color);
     text-shadow: rgba(0, 0, 0, 0) 0px 0px 1px
 }
 
@@ -83,10 +85,63 @@ body {
     color: var(--secondary-color) !important;
 }
 
+.fourth-color {
+    color: var(--fourth-color) !important;
+}
+
 .fifth-color {
     color: var(--fifth-color) !important;
 }
 
 .footer {
     background-color: black;
+}
+
+.pt-12 {
+    padding-top: 6em;
+}
+
+.infobox {
+    background-color: rgb(18, 18, 18);
+    height: 300px;
+    border-radius: .5rem;
+    width: 300px;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: white;
+}
+
+.footer {
+    border-top: 1px solid var(--fourth-color)
+}
+
+.fun-thing {
+    top: 600;
+    left: 0;
+    position: absolute;
+    height: 30rem;
+    width: 30rem;
+    background-image: url('gggyrate.svg');
+    background-size: cover;
+
+}
+
+.fun-thing-2 {
+    top: 0;
+    right: 0;
+    position: absolute;
+    height: 30rem;
+    width: 30rem;
+    background-image: url('gggyrate_hex.svg');
+    background-size: cover;
+
+}
+
+.values-section {
+background-image: linear-gradient(180deg,var(--background-color) 5%,#fff0 70%), url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");    
 }
