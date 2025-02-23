@@ -31,11 +31,14 @@ a.navbar-item:hover {
     --bulma-navbar-item-hover-background-l-delta: none;
 }
 
+.image {
+    height: 300px;
+}
+
 .card-who {
     background-color: rgb(18, 18, 18);
     color: var(--fourth-color);
     border-radius: .5rem;
-    max-width: 400px;
     padding: 1rem;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
